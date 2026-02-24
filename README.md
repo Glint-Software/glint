@@ -70,4 +70,4 @@ Glint is closed-source proprietary software. We don't accept code contributions,
 
 ## License
 
-Proprietary. Copyright &copy; 2025-2026 [Knife Edge Software](https://glint.dev). All rights reserved.
+Proprietary. Copyright &copy; 2025-2026 [Glint Software](https://glint.dev). All rights reserved.
