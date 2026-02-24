@@ -1,3 +1,5 @@
-# Glint Releases
+# Glint
 
-Download Glint installers from the [Releases](https://github.com/Knife-Edge-Software/glint-releases/releases) page.
+## Releases
+
+Download Glint installers from the [Releases](https://github.com/Glint-software/glint/releases) page.
