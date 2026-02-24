@@ -4,7 +4,7 @@
 
 ### Your command center for agentic development.
 
-A native desktop app for managing GitHub issues and repositories — built with [Tauri](https://tauri.app) and Rust for speed, not Electron.
+A native desktop app for managing GitHub issues and repositories.
 
 [![Windows](https://img.shields.io/badge/Windows-0078D4?logo=windows&logoColor=white)](#download)
 [![macOS](https://img.shields.io/badge/macOS-000000?logo=apple&logoColor=white)](#download)
