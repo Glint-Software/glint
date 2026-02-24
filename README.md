@@ -4,7 +4,7 @@
 
 ### Your command center for agentic development.
 
-A native desktop app for managing GitHub issues and repositories.
+A native desktop app for software development in the modern age, for developing with AI workflows.
 
 [![Windows](https://img.shields.io/badge/Windows-0078D4?logo=windows&logoColor=white)](#download)
 [![macOS](https://img.shields.io/badge/macOS-000000?logo=apple&logoColor=white)](#download)
@@ -18,17 +18,17 @@ A native desktop app for managing GitHub issues and repositories.
 
 ## What is Glint?
 
-Glint is a desktop IDE designed around **issues, not just files**. Open a GitHub issue, see the relevant code, run an AI agent, and push changes — all from one window. Everything runs natively on your machine.
+Glint is a desktop IDE designed to combine terminals, ai chat sessions, file editing, git repo management, worktrees, issue, and pull requests into one unified tool. Open a GitHub issue, see the relevant code, run an AI agent, and push changes — all from one window, and built with agentic workflows in mind, particularly worktrees.
 
 ## Features
 
-**Issue-Driven Workflow** &mdash; Browse, filter, and manage GitHub issues alongside your code. Click an issue to see its full context, comments, and metadata without leaving the app.
+**Issue-Driven Workflow** &mdash; Browse, filter, and manage GitHub issues alongside your code. Click an issue to see its full context, comments, and metadata without leaving the app.  Create custom filters to keep the issues you care about in focus.
 
-**Multi-Pane Layouts** &mdash; Split your workspace into up to five panes with nine layout presets (Alt+1 through Alt+9). Place issues next to code, terminals next to branches — whatever fits your workflow.
+**Multi-Pane Layouts** &mdash; Split your workspace into panes with nine layout presets (Alt+1 through Alt+9). Place issues next to code, terminals next to branches — whatever fits your workflow.
 
 **Multi-Repo Tabs** &mdash; Open multiple repositories as tabs. Each repo tab preserves its own layout, content tabs, and scroll positions independently.
 
-**Git Worktrees** &mdash; Work on multiple branches simultaneously. Worktree tabs appear alongside their parent repo so you can switch contexts without stashing.
+**Git Worktrees** &mdash; Work on multiple branches simultaneously. Worktree tabs appear alongside their parent repo so you can switch contexts without stashing.  Drag tabs between worktrees and their parent repos.
 
 **Integrated Terminal** &mdash; Context-aware terminals that follow your active repository. Terminal tabs persist across restarts.
 
