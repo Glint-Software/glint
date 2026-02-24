@@ -1,6 +1,6 @@
 # Contributing to Glint
 
-Thank you for your interest in Glint! While Glint is closed-source proprietary software and we do not accept external code contributions, there are several ways you can help improve the project.
+Thank you for your interest in Glint\! While Glint is closed-source proprietary software and we do not accept external code contributions, there are several ways you can help improve the project.
 
 ## Reporting Bugs
 
@@ -18,6 +18,29 @@ Have an idea for a new feature or improvement?
 
 - **Discuss first:** Start a conversation in [Discussions > Ideas](https://github.com/glint-software/glint/discussions/categories/ideas) to get feedback before filing a formal request.
 - **File a request:** Open a [Feature Request](https://github.com/glint-software/glint/issues/new?template=feature-request.yml) with a clear description of the problem you're solving and your proposed solution.
+
+## Issue Labels
+
+We use labels to categorize and prioritize issues:
+
+| Label | Description |
+|-------|-------------|
+| `bug` | Something isn't working |
+| `enhancement` | New feature or request |
+| `documentation` | Improvements or additions to documentation |
+| `good first issue` | Good for newcomers |
+| `help wanted` | Extra attention is needed |
+| `priority: high` | Needs attention soon |
+| `priority: low` | Nice to have |
+| `area: ui` | User interface |
+| `area: core` | Core application |
+| `area: git` | Git operations |
+| `area: github` | GitHub integration |
+| `needs-triage` | Not yet reviewed |
+| `duplicate` | Already reported |
+| `wontfix` | Will not be addressed |
+
+New issues are typically tagged `needs-triage` until reviewed. You don't need to add labels yourself — maintainers will label issues during triage.
 
 ## Community Guidelines
 
