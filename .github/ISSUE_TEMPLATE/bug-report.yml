@@ -26,24 +26,18 @@ body:
         1. Open Glint and navigate to...
         2. Click on...
         3. Observe...
-    validations:
-      required: true
 
   - type: textarea
     id: expected
     attributes:
       label: Expected Behavior
       description: What did you expect to happen?
-    validations:
-      required: true
 
   - type: textarea
     id: actual
     attributes:
       label: Actual Behavior
       description: What actually happened?
-    validations:
-      required: true
 
   - type: input
     id: version
