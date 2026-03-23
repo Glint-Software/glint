@@ -1,0 +1,73 @@
+name: Mirror Issue to Private Repo
+
+on:
+  issues:
+    types: [labeled]
+
+jobs:
+  mirror:
+    if: github.event.label.name == 'accepted'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create issue in private repo
+        id: create
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.PRIVATE_REPO_TOKEN }}
+          script: |
+            const issue = context.payload.issue;
+            const publicNumber = issue.number;
+            const publicUrl = issue.html_url;
+
+            const body = [
+              `Mirrored from ${publicUrl}`,
+              '',
+              '---',
+              '',
+              issue.body || '_No description provided._'
+            ].join('\n');
+
+            const created = await github.rest.issues.create({
+              owner: 'Glint-Software',
+              repo: 'glint-src',
+              title: issue.title,
+              body: body,
+              labels: ['public-issue']
+            });
+
+            core.setOutput('private_url', created.data.html_url);
+
+      - name: Comment on public issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: `This is now being tracked internally. We'll update this issue when it's resolved.`
+            });
+
+      - name: Update labels
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issue_number = context.issue.number;
+            const { owner, repo } = context.repo;
+
+            // Replace accepted with tracked
+            await github.rest.issues.removeLabel({
+              owner, repo, issue_number,
+              name: 'accepted'
+            }).catch(() => {});
+
+            await github.rest.issues.addLabels({
+              owner, repo, issue_number,
+              labels: ['tracked']
+            });
+
+            // Remove triage if still present
+            await github.rest.issues.removeLabel({
+              owner, repo, issue_number,
+              name: 'triage'
+            }).catch(() => {});
