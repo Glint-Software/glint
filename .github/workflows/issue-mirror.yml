@@ -19,15 +19,34 @@ jobs:
           github-token: ${{ secrets.PRIVATE_REPO_TOKEN }}
           script: |
             const issue = context.payload.issue;
-            const publicNumber = issue.number;
             const publicUrl = issue.html_url;
 
+            // Fetch comments from the public issue
+            const comments = await github.rest.issues.listComments({
+              owner: 'Glint-Software',
+              repo: 'glint',
+              issue_number: issue.number,
+            });
+
+            let commentSection = '';
+            if (comments.data.length > 0) {
+              commentSection = '\n\n## Comments from public issue\n\n' +
+                comments.data.map(c => {
+                  const date = c.created_at.split('T')[0];
+                  return `**@${c.user.login}** (${date}):\n${c.body}`;
+                }).join('\n\n---\n\n');
+            }
+
             const body = [
-              `Mirrored from ${publicUrl}`,
+              `> **Mirrored from ${publicUrl}**`,
+              `> This issue was copied from the public repo. The original may have`,
+              `> additional comments and context not shown here — always check the`,
+              `> link above before working on this issue.`,
               '',
               '---',
               '',
-              issue.body || '_No description provided._'
+              issue.body || '_No description provided._',
+              commentSection
             ].join('\n');
 
             const created = await github.rest.issues.create({
