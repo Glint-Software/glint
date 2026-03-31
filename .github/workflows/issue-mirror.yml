@@ -12,7 +12,38 @@ jobs:
     if: github.event.label.name == 'accepted'
     runs-on: ubuntu-latest
     steps:
+      - name: Check for existing mirror
+        id: check
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.PRIVATE_REPO_TOKEN }}
+          script: |
+            const issue = context.payload.issue;
+            const labels = issue.labels.map(l => l.name);
+
+            // Fast path: already tracked means mirror exists
+            if (labels.includes('tracked')) {
+              core.info(`Issue #${issue.number} already has 'tracked' label — skipping`);
+              core.setOutput('exists', 'true');
+              return;
+            }
+
+            // Safety net: search glint-src for an existing mirror of this issue
+            const publicUrl = issue.html_url;
+            const { data } = await github.rest.search.issuesAndPullRequests({
+              q: `repo:Glint-Software/glint-src is:issue label:public-issue "${publicUrl}" in:body`
+            });
+
+            if (data.total_count > 0) {
+              core.info(`Found existing mirror(s) in glint-src: ${data.items.map(i => '#' + i.number).join(', ')} — skipping`);
+              core.setOutput('exists', 'true');
+              return;
+            }
+
+            core.setOutput('exists', 'false');
+
       - name: Create issue in private repo
+        if: steps.check.outputs.exists == 'false'
         id: create
         uses: actions/github-script@v7
         with:
@@ -60,6 +91,7 @@ jobs:
             core.setOutput('private_url', created.data.html_url);
 
       - name: Comment on public issue
+        if: steps.check.outputs.exists == 'false'
         uses: actions/github-script@v7
         with:
           script: |
