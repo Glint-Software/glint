@@ -50,12 +50,19 @@ Download installers for Windows, macOS, and Linux from the **[Releases](https://
 
 ## Pricing
 
-| | Free | Pro |
+Glint has five plans. Prices shown are monthly; annual billing is available at a discount.
+
+| Plan | Monthly | Highlights |
 |---|---|---|
-| Repository tabs | 5 | Unlimited |
-| Public repos | Yes | Yes |
-| Private repos | &mdash; | Yes |
-| **Price** | **$0** | **$49** |
+| **Free** | **$0** | Up to 5 open projects; local &amp; public repos (GitHub, GitLab, Bitbucket); AI Chat with your own Claude / Codex subscription |
+| **Glint Solo** | **$7** | Unlimited projects; private repositories; Sparkle AI features (commit messages, PR descriptions, summaries) |
+| **Glint Assist** | **$20** | Everything in Solo, plus the Glint Assist agent &amp; all models, BYOK, and $10/mo of included AI credit (at cost) |
+| **Glint Assist Pro** | **$60** | Everything in Assist, plus $45/mo of included AI credit (at cost) |
+| **Glint Assist Max** | **$200** | Everything in Pro, plus $180/mo of included AI credit (at cost) |
+
+Subscribe for 12 continuous months and keep Glint forever (a perpetual license; updates and AI features still require an active subscription). A limited-time beta discount is available during the public beta.
+
+See **[glint.dev](https://glint.dev)** for full plan details, annual pricing, and current beta offers &mdash; it is the source of truth for pricing.
 
 ## Community
 
