@@ -20,31 +20,31 @@ A native development workspace for issues, code, AI assistance, git, CI, and pul
 
 Glint is a native development workspace built for the full software development workflow. It brings projects, issues, code, AI assistance, git, CI, terminals, worktrees, and pull requests into one place.
 
-Open an issue, understand the relevant project context, use Glint Assist, review changes, manage git, check CI, and move work toward a pull request — all from one workflow environment.
+Open an issue, understand the relevant project context, use Glint Assist, review changes, manage git, check CI, and move work toward a pull request - all from one workflow environment.
 
-Glint is built for modern software development — not just Editor + AI.
+Glint is built for modern software development - not just Editor + AI.
 
 ## Features
 
-**Issue-Driven Workflow** &mdash; Browse, filter, and manage GitHub issues alongside your code. Open an issue to see its full context, comments, and metadata without leaving the app. Create custom filters to keep the issues you care about in focus.
+**Issue-Driven Workflow** - Browse, filter, and manage GitHub issues alongside your code. Open an issue to see its full context, comments, and metadata without leaving the app. Create custom filters to keep the issues you care about in focus.
 
-**AI-Assisted Development with Glint Assist** &mdash; Use Glint Assist to move from issue to implementation while keeping you in control of context, changes, and review.
+**AI-Assisted Development with Glint Assist** - Use Glint Assist to move from issue to implementation while keeping you in control of context, changes, and review.
 
-**Multi-Pane Layouts** &mdash; Split your workspace into panes with nine layout presets (Alt+1 through Alt+9). Place issues next to code, terminals next to branches, or reviews next to diffs.
+**Multi-Pane Layouts** - Split your workspace into panes with nine layout presets (Alt+1 through Alt+9). Place issues next to code, terminals next to branches, or reviews next to diffs.
 
-**Multi-Repo Tabs** &mdash; Open multiple repositories as tabs. Each repo tab preserves its own layout, content tabs, and scroll positions independently.
+**Multi-Repo Tabs** - Open multiple repositories as tabs. Each repo tab preserves its own layout, content tabs, and scroll positions independently.
 
-**Git Worktrees** &mdash; Work on multiple branches simultaneously. Worktree tabs appear alongside their parent repo so you can switch contexts without stashing. Drag tabs between worktrees and their parent repos.
+**Git Worktrees** - Work on multiple branches simultaneously. Worktree tabs appear alongside their parent repo so you can switch contexts without stashing. Drag tabs between worktrees and their parent repos.
 
-**Integrated Terminal** &mdash; Context-aware terminals that follow your active repository. Terminal tabs persist across restarts.
+**Integrated Terminal** - Context-aware terminals that follow your active repository. Terminal tabs persist across restarts.
 
-**File Browser & Editor** &mdash; Browse, edit, and preview files with syntax highlighting and blame information.
+**File Browser & Editor** - Browse, edit, and preview files with syntax highlighting and blame information.
 
-**Full Git Integration** &mdash; Stage, commit, push, pull, branch, and rebase from the UI. Use the terminal when you want it, but keep git visible in your workflow.
+**Full Git Integration** - Stage, commit, push, pull, branch, and rebase from the UI. Use the terminal when you want it, but keep git visible in your workflow.
 
-**Pull Requests & CI Visibility** &mdash; Review changes, prepare pull requests, and keep build status visible as work moves forward.
+**Pull Requests & CI Visibility** - Review changes, prepare pull requests, and keep build status visible as work moves forward.
 
-**Browser Integration** &mdash; Open GitHub issues directly in Glint from your browser with a bookmarklet, userscript, or browser extension.
+**Browser Integration** - Open GitHub issues directly in Glint from your browser with a bookmarklet, userscript, or browser extension.
 
 ## Download
 
@@ -65,10 +65,10 @@ See **[glint.dev](https://glint.dev)** for current pricing, beta offers, plan de
 
 ## Community
 
-- **Bug reports** &mdash; [File an issue](https://github.com/glint-software/glint/issues/new?template=bug-report.yml)
-- **Feature requests** &mdash; [Start a discussion](https://github.com/glint-software/glint/discussions/categories/ideas) first, then [file a request](https://github.com/glint-software/glint/issues/new?template=feature-request.yml)
-- **Questions & help** &mdash; [Q&A Discussions](https://github.com/glint-software/glint/discussions/categories/q-a)
-- **Security vulnerabilities** &mdash; [Report privately](https://github.com/glint-software/glint/security) (do not file public issues)
+- **Bug reports** - [File an issue](https://github.com/glint-software/glint/issues/new?template=bug-report.yml)
+- **Feature requests** - [Start a discussion](https://github.com/glint-software/glint/discussions/categories/ideas) first, then [file a request](https://github.com/glint-software/glint/issues/new?template=feature-request.yml)
+- **Questions & help** - [Q&A Discussions](https://github.com/glint-software/glint/discussions/categories/q-a)
+- **Security vulnerabilities** - [Report privately](https://github.com/glint-software/glint/security) (do not file public issues)
 
 ## Contributing
 
