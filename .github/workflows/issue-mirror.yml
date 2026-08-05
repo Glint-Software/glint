@@ -31,7 +31,7 @@ jobs:
             // Safety net: search glint-src for an existing mirror of this issue
             const publicUrl = issue.html_url;
             const { data } = await github.rest.search.issuesAndPullRequests({
-              q: `repo:Glint-Software/glint-src is:issue label:public-issue "${publicUrl}" in:body`
+              q: `repo:${context.repo.owner}/glint-src is:issue label:public-issue "${publicUrl}" in:body`
             });
 
             if (data.total_count > 0) {
@@ -51,10 +51,11 @@ jobs:
           script: |
             const issue = context.payload.issue;
             const publicUrl = issue.html_url;
+            const owner = context.repo.owner;
 
             // Fetch comments from the public issue
             const comments = await github.rest.issues.listComments({
-              owner: 'Glint-Software',
+              owner,
               repo: 'glint',
               issue_number: issue.number,
             });
@@ -81,7 +82,7 @@ jobs:
             ].join('\n');
 
             const created = await github.rest.issues.create({
-              owner: 'Glint-Software',
+              owner,
               repo: 'glint-src',
               title: issue.title,
               body: body,
