@@ -28,14 +28,14 @@ jobs:
               return;
             }
 
-            // Safety net: search glint-src for an existing mirror of this issue
+            // Safety net: search Zide-src for an existing mirror of this issue
             const publicUrl = issue.html_url;
             const { data } = await github.rest.search.issuesAndPullRequests({
-              q: `repo:${context.repo.owner}/glint-src is:issue label:public-issue "${publicUrl}" in:body`
+              q: `repo:${context.repo.owner}/Zide-src is:issue label:public-issue "${publicUrl}" in:body`
             });
 
             if (data.total_count > 0) {
-              core.info(`Found existing mirror(s) in glint-src: ${data.items.map(i => '#' + i.number).join(', ')} — skipping`);
+              core.info(`Found existing mirror(s) in Zide-src: ${data.items.map(i => '#' + i.number).join(', ')} — skipping`);
               core.setOutput('exists', 'true');
               return;
             }
@@ -56,7 +56,7 @@ jobs:
             // Fetch comments from the public issue
             const comments = await github.rest.issues.listComments({
               owner,
-              repo: 'glint',
+              repo: 'Zide',
               issue_number: issue.number,
             });
 
@@ -83,7 +83,7 @@ jobs:
 
             const created = await github.rest.issues.create({
               owner,
-              repo: 'glint-src',
+              repo: 'Zide-src',
               title: issue.title,
               body: body,
               labels: ['public-issue']

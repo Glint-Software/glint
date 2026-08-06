@@ -2,11 +2,11 @@
 
 ## Reporting a Vulnerability
 
-If you discover a security vulnerability in Glint, **please do not file a public issue.**
+If you discover a security vulnerability in Zide, **please do not file a public issue.**
 
 Instead, use GitHub's private vulnerability reporting:
 
-1. Go to the [Security tab](https://github.com/glint-software/glint/security)
+1. Go to the [Security tab](https://github.com/zide-software/Zide/security)
 2. Click **"Report a vulnerability"**
 3. Fill out the form with details about the vulnerability
 
