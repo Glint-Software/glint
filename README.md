@@ -2,9 +2,7 @@
 
 <img src=".github/assets/zide-logo.svg" alt="Zide" width="300">
 
-### One workspace for the full developer workflow.
-
-A native development workspace for issues, code, AI assistance, git, CI, and pull requests.
+A development workspace for agentic coding, terminals, issues, code edits, git, CI, and pull requests.
 
 [![Windows](https://img.shields.io/badge/Windows-0078D4?logo=windows&logoColor=white)](#download)
 [![macOS](https://img.shields.io/badge/macOS-000000?logo=apple&logoColor=white)](#download)
