@@ -4,10 +4,6 @@
 
 A development workspace for agentic coding, terminals, issues, code edits, git, CI, and pull requests.
 
-[![Windows](https://img.shields.io/badge/Windows-0078D4?logo=windows&logoColor=white)](#download)
-[![macOS](https://img.shields.io/badge/macOS-000000?logo=apple&logoColor=white)](#download)
-[![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black)](#download)
-
 [Website](https://zide.dev) &nbsp;&bull;&nbsp; [Documentation](https://docs.zide.dev) &nbsp;&bull;&nbsp; [Discussions](https://github.com/zide-software/Zide/discussions) &nbsp;&bull;&nbsp; [Issues](https://github.com/zide-software/Zide/issues)
 
 </div>
@@ -15,23 +11,6 @@ A development workspace for agentic coding, terminals, issues, code edits, git, 
 ---
 
 Learn more about Zide at **[zide.dev](https://zide.dev)**.
-
-## Download
-
-Download installers for Windows, macOS, and Linux from the **[Releases](https://github.com/zide-software/Zide/releases)** page.
-
-### Quick Start
-
-1. Install and launch Zide.
-2. Open a Git repository folder.
-3. Sign in with GitHub under **Settings > GitHub** to access issues, pull requests, and more.
-4. Open an issue, review the project context, and move work forward from one workspace.
-
-## Pricing
-
-Zide offers free and paid plans, including options for Zide Assist and included AI credits.
-
-See **[zide.dev](https://zide.dev)** for current pricing, beta offers, plan details, and annual billing options.
 
 ## Community
 
