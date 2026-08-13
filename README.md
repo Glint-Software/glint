@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src=".github/assets/zide-logo.png" alt="Zide" width="300">
+<img src=".github/assets/zide-logo.svg" alt="Zide" width="300">
 
 ### One workspace for the full developer workflow.
 
