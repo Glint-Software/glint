@@ -4,7 +4,7 @@
 
 A development workspace for agentic coding, terminals, issues, code edits, git, CI, and pull requests.
 
-[Website](https://zide.dev) &nbsp;&bull;&nbsp; [Documentation](https://docs.zide.dev) &nbsp;&bull;&nbsp; [Discussions](https://github.com/zide-software/Zide/discussions) &nbsp;&bull;&nbsp; [Issues](https://github.com/zide-software/Zide/issues)
+[Website](https://zide.dev) &nbsp;&bull;&nbsp; [Documentation](https://docs.zide.dev) &nbsp;&bull;&nbsp; [Issues](https://github.com/zide-software/Zide/issues)
 
 </div>
 
@@ -15,8 +15,8 @@ Learn more about Zide at **[zide.dev](https://zide.dev)**.
 ## Community
 
 - **Bug reports** - [File an issue](https://github.com/zide-software/Zide/issues/new?template=bug-report.yml)
-- **Feature requests** - [Start a discussion](https://github.com/zide-software/Zide/discussions/categories/ideas) first, then [file a request](https://github.com/zide-software/Zide/issues/new?template=feature-request.yml)
-- **Questions & help** - [Q&A Discussions](https://github.com/zide-software/Zide/discussions/categories/q-a)
+- **Feature requests** - [File a request](https://github.com/zide-software/Zide/issues/new?template=feature-request.yml)
+- **Questions & help** - [Documentation](https://docs.zide.dev)
 - **Security vulnerabilities** - [Report privately](https://github.com/zide-software/Zide/security) (do not file public issues)
 
 ## Contributing

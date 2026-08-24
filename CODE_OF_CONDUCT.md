@@ -1,6 +1,6 @@
 # Code of Conduct
 
-This is a community space for Zide bug reports, feature requests, and product discussions.
+This is a community space for Zide bug reports and feature requests.
 
 ## Rules
 
